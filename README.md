@@ -1,1 +1,3 @@
-DHA
+DHA - Dynamic Human Authentication
+
+Minor Project
