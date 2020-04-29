@@ -22,16 +22,21 @@ video_capture = cv2.VideoCapture(0)
 trump_biden_image = face_recognition.load_image_file("donald.jpg")
 trump_biden_face_encoding = face_recognition.face_encodings(trump_biden_image)[0]
 print(trump_biden_face_encoding)
+#obama_biden_image = face_recognition.load_image_file("obama.jpg")
+#obama_biden_face_encoding = face_recognition.face_encodings(obama_biden_image)[0]
+#print(obama_biden_face_encoding)
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     # obama_face_encoding,
-    trump_biden_face_encoding
+    trump_biden_face_encoding,
+   # obama_biden_face_encoding
 ]
 
 # known_face_encodings = []
 known_face_names = [
 
     "Donald Trump"
+    #"Barack Obama"
 ]
 
 # Initialize some variables
