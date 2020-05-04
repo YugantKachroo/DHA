@@ -33,6 +33,21 @@ def home(request):
 
 
 def StationEntryView(request, station_no):
+
+    if request.method == 'POST':
+        try:
+            entry = request.POST.get("first")
+            entry = int(entry)
+            return redirect('core:station_entry', entry)
+        except:
+            pass
+
+        try:
+            exit = request.POST.get("second")
+            exit = int(exit)
+            return redirect('core:station_exit', exit)
+        except:
+            pass
     station = models.Station.objects.get(station_no=station_no)
     pics = list(models.Person.objects.all().values_list('pic', flat=True))
     known_face_names = list(models.Person.objects.all().values_list('name', flat=True))
@@ -123,6 +138,20 @@ def StationEntryView(request, station_no):
 
 
 def StationExitView(request, station_no):
+    if request.method == 'POST':
+        try:
+            entry = request.POST.get("first")
+            entry = int(entry)
+            return redirect('core:station_entry', entry)
+        except:
+            pass
+
+        try:
+            exit = request.POST.get("second")
+            exit = int(exit)
+            return redirect('core:station_exit', exit)
+        except:
+            pass
     station = models.Station.objects.get(station_no=station_no)
     pics = list(models.Person.objects.all().values_list('pic', flat=True))
     known_face_names = list(models.Person.objects.all().values_list('name', flat=True))
