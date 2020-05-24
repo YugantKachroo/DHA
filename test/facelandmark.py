@@ -2,12 +2,10 @@ import sys
 import dlib
 from skimage import io
 
-# You can download the required pre-trained face detection model here:
-# http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 predictor_model = "shape_predictor_68_face_landmarks.dat"
 
-# Take the image file name from the command line
-file_name = "C:/Users/yugan/Documents/GitHub/DHA/test/yugant.jpeg"
+# Take the image file name
+file_name = "k.jpg"
 
 # Create a HOG face detector using the built-in dlib class
 face_detector = dlib.get_frontal_face_detector()
@@ -15,8 +13,8 @@ face_pose_predictor = dlib.shape_predictor(predictor_model)
 
 win = dlib.image_window()
 
-# Take the image file name from the command line
-file_name = "C:/Users/yugan/Documents/GitHub/DHA/test/yugant.jpeg"
+# Take the image file name
+file_name = "k.jpg"
 
 # Load the image
 image = io.imread(file_name)

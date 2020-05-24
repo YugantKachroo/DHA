@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 
 #reading the image
-img = imread('yugant.jpeg')
+img = imread('w.jpg')
 #resizing image
 resized_img = resize(img, (128,64))
 #imshow(resized_img)

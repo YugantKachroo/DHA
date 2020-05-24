@@ -3,7 +3,7 @@ import dlib
 from skimage import io
 
 # Take the image file name from the command line
-file_name = "C:/Users/yugan/Documents/GitHub/DHA/test/yugant.jpeg"
+file_name = "k.jpg"
 
 # Create a HOG face detector using the built-in dlib class
 face_detector = dlib.get_frontal_face_detector()

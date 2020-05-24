@@ -14,14 +14,12 @@ class Person(models.Model):
     def __str__(self):
         return self.name
 
-
 class Station(models.Model):
     station_no = models.IntegerField(unique=True)
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
-
 
 class Log(models.Model):
     log_id = models.AutoField(primary_key=True, unique=True)
