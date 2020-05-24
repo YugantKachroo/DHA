@@ -14,9 +14,6 @@ class Person(models.Model):
     def __str__(self):
         return self.name
 
-    # class Meta:
-    #     ordering = ['uid']
-
 
 class Station(models.Model):
     station_no = models.IntegerField(unique=True)
