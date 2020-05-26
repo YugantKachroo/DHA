@@ -4,9 +4,6 @@ from skimage.transform import resize
 from skimage.feature import hog
 from skimage import exposure
 import matplotlib.pyplot as plt
-
-
-
 #reading the image
 img = imread('w.jpg')
 #resizing image
